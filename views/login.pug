@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Login Page
+    style
+        include ../static/login.css
+  body
+    .login-container
+      h2 Login
+      form(action='#', method='post')
+        label(for='username') Username:
+        input(type='text', id='username', name='username', placeholder='Enter your username', required)
+        
+        label(for='password') Password:
+        input(type='password', id='password', name='password', placeholder='Enter your password', required)
+        
+        button(type='submit') Login
